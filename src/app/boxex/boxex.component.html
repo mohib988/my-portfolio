@@ -1,0 +1,13 @@
+<!-- box-layout.component.html -->
+
+<div class="box-container">
+    <div *ngFor="let box of boxes; let i = index" class="box" [style.order]="box.order" (click)="shuffleBoxes()">
+<div>
+    Mohib{{i}}
+</div>
+<div>
+    Mohib
+</div>
+    </div>
+  </div>
+  

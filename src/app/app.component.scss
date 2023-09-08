@@ -1,0 +1,39 @@
+.characters-container {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.character {
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+}
+
+.character::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px; /* Adjust the width of the hit effect line */
+    height: 100%;
+    background-color: red; /* Adjust the color as needed */
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.character:hover::before {
+    opacity: 1;
+}
+
+@keyframes hitEffect {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(1.2);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}

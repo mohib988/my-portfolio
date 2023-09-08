@@ -5,11 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { ProjectsComponent } from './projects/projects.component';
+import { BoxexComponent } from './boxex/boxex.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    BoxexComponent,
   ],
   imports: [
     BrowserModule,

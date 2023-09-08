@@ -1,0 +1,33 @@
+// box-layout.component.scss
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    width: 340px; /* Adjust the container width as needed */
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 24px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+
+  
