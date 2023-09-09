@@ -2,8 +2,10 @@
 
 .box-container {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(2, 100px);
+    width: 90vw;
+    margin: auto;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(2, 20vh);
     gap: 10px;
     justify-content: center;
     align-content: center;
@@ -31,3 +33,41 @@
   
 
   
+  .box-container1 {
+    display: flex;
+    width: 30vw;
+    margin: 20px;
+    padding: 10px;
+    justify-content: start;
+    border-radius: 5px;
+  }
+
+  /* Image styles */
+  .box-image1 {
+    // flex: 0 0 100px; /* Fixed width for the image */
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+  /* Content container (heading and description) */
+  .box-content1 {
+    flex: 1; /* Allow content to take remaining space */
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* Heading styles */
+  .box-heading1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  /* Description styles */
+  .box-description1 {
+    font-size: 10px;
+    flex-grow: 1; /* Allow description to grow and fill remaining space */
+    text-align: left;
+  }

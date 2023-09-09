@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title:string = 'portfolio';
-  title2:string = 'portfolio';
+  sectionName:string = 'Projects';
+  title2:string = 'Projects';
 
   receiveData(data: string): void {
     this.title2 = data;

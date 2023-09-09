@@ -2,12 +2,15 @@
 
 <div class="box-container">
     <div *ngFor="let box of boxes; let i = index" class="box" [style.order]="box.order" (click)="shuffleBoxes()">
-<div>
-    Mohib{{i}}
-</div>
-<div>
-    Mohib
-</div>
+<!-- image title and description -->
+<div class="box-container1">
+    <img class="box-image1" src="your-image-url.jpg" alt="Image">
+    <div class="box-content1">
+      <div class="box-heading1">Heading</div>
+      <div class="box-description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam eget justo vel rhoncus.</div>
+    </div>
+  </div>
+
     </div>
   </div>
   

@@ -3,18 +3,20 @@
 <!-- app.component.html -->
 
 <!-- navbar.component.html -->
+
+
+<app-navbar></app-navbar>
+
 <div class="yoyo-swing">
 <div class="yoyo-container">
     <div class="string"></div>
     <div class="yoyo">
-      <div class="text">Mohib</div>
+      <div class="text">
+        <span *ngIf="currentWordIndex < words.length" class="inner">{{ words[currentWordIndex] }}</span>
+      </div>
     </div>
   </div>
   </div>
-  
-
-<app-navbar></app-navbar>
-
 <div class="background">
 <div class="neon-container">
   <div class="neon-overlay"></div>
@@ -30,9 +32,7 @@
 
 
 
-<!-- <div class="hypnotize-container">
-  <div class="hypnotize-element">Mohib Qureshi</div>
-</div> -->
+
 
 
   

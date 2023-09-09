@@ -1,4 +1,12 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway,wght@1,200&display=swap');
+$text-color: snow;
+body{
     margin: 0%;
     padding: 0%;
+    background-color: black;
+    color: $text-color;
+}
+*{
+    color: $text-color;
+    font-family: "Dancing Script";
 }

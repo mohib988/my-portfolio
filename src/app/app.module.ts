@@ -7,12 +7,14 @@ import { HeaderModule } from './header/header.module';
 import { ProjectsComponent } from './projects/projects.component';
 import { BoxexComponent } from './boxex/boxex.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HeadingComponent } from './heading/heading.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsComponent,
     BoxexComponent,
+    HeadingComponent,
   ],
   imports: [
     BrowserModule,
