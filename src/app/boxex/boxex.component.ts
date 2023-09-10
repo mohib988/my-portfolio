@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-boxex',
@@ -6,25 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./boxex.component.scss']
 })
 export class BoxexComponent {
-    boxes = [
-      { order: 1 },
-      { order: 2 },
-      { order: 3 },
-      { order: 4 },
-      { order: 5 },
-      { order: 6 },
-    ];
+  @Input() project:any;
+
   
     ngOnInit() {
-      // Automatically shuffle boxes every 5 seconds (5000 milliseconds)
-      setInterval(() => {
+      // Automatically shuffle project every 5 seconds (5000 milliseconds)
+   
+      const interval = setInterval(() => {
         this.shuffleBoxes();
-      }, 500);
+      }, 2000);
     }
   
     shuffleBoxes() {
-      // Shuffle the positions of the boxes
-      this.boxes = this.shuffleArray(this.boxes);
+      // Shuffle the positions of the project
+      this.project = this.shuffleArray(this.project);
     }
   
     // Function to shuffle an array randomly

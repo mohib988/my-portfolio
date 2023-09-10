@@ -1,10 +1,18 @@
 <app-header [a]="title" (childE)="receiveData($event)"></app-header>
 <app-heading [title]="sectionName"></app-heading>
-<app-boxex></app-boxex>
 
-<div>{{title2}}</div>
+<app-boxex [project]="project"></app-boxex>
+<app-heading [title]="sectionName2"></app-heading>
+
+<app-boxex [project]="tools"></app-boxex>
+
+<app-profile></app-profile>
+<!-- <app-heading [title]="sectionName"></app-heading>
+<app-boxex></app-boxex> -->
+
+<!-- <div>{{title2}}</div>
 
 <div class="characters-container">
     <span class="character">A</span>
     <span class="character">B</span>
-</div>
+</div> -->

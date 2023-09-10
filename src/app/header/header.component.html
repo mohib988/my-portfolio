@@ -7,17 +7,17 @@
 
 <app-navbar></app-navbar>
 
-<div class="yoyo-swing">
-<div class="yoyo-container">
-    <div class="string"></div>
-    <div class="yoyo">
-      <div class="text">
-        <span *ngIf="currentWordIndex < words.length" class="inner">{{ words[currentWordIndex] }}</span>
+<div class="background">
+  <div class="yoyo-swing">
+  <div class="yoyo-container">
+      <div class="string"></div>
+      <div class="yoyo">
+        <div class="text">
+          <span *ngIf="currentWordIndex < words.length" class="inner">{{ words[currentWordIndex] }}</span>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-<div class="background">
+    </div>
 <div class="neon-container">
   <div class="neon-overlay"></div>
   <img src="https://img.freepik.com/premium-photo/illustration-optic-illusion-black-white-solid-color_945369-6534.jpg?w=900" class="spiral image" alt="">

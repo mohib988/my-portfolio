@@ -1,13 +1,13 @@
 <!-- box-layout.component.html -->
 
 <div class="box-container">
-    <div *ngFor="let box of boxes; let i = index" class="box" [style.order]="box.order" (click)="shuffleBoxes()">
+    <div *ngFor="let projects of project; let i = index" class="box" [style.order]="project.order" (click)="shuffleBoxes()">
 <!-- image title and description -->
 <div class="box-container1">
-    <img class="box-image1" src="your-image-url.jpg" alt="Image">
+    <img class="box-image1" src={{projects.url}} alt="Image">
     <div class="box-content1">
-      <div class="box-heading1">Heading</div>
-      <div class="box-description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam eget justo vel rhoncus.</div>
+      <div class="box-heading1">{{projects.heading}}</div>
+      <div class="box-description1">{{projects.description}}</div>
     </div>
   </div>
 

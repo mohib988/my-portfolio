@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:ital,wght@1,200&display=swap');
 $text-color: snow;
 body{
     margin: 0%;
     padding: 0%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.895);
     color: $text-color;
 }
 *{

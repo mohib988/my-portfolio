@@ -1,0 +1,110 @@
+.profile-container {
+    position: relative; /* Ensure the effect stays within the container */
+    padding: 10px 0px;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 80vw;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .left {
+    // flex: 1;
+    overflow: hidden;
+  }
+  
+  img {
+    // max-width: 100%;
+    aspect-ratio: 1.5/2;
+    height: 50vh;
+    border-radius: 5px;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+
+    flex-direction: column;
+    text-align: center;
+    // justify-content: center;
+    // justify-content: space-around;
+
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20%;
+  }
+  
+  /* Swipe-right effect styles */
+  .swipe-right-effect {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0; /* Initially invisible */
+    // background-color: #c0c0c036; /* Silver background color */
+    background-color: rgba(30, 30, 30, 0.728);
+    border-left:2px ;
+    z-index: 1; /* Place above the image */
+}
+
+  .extra{
+    position: absolute-relative;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(246, 250, 39, 0.755);
+    box-shadow: 0px 0px 20px rgb(255, 255, 3);
+    animation: Bb  100ms  100ms ease-in-out !important;
+  }
+  @keyframes swipeRight{
+    10% {
+      width: 0px; /* Start with no width (invisible) */
+    }
+    20% {
+      width: 100px; /* Fully visible */
+    }
+    30% {
+      width: 0px; /* Start with no width (invisible) */
+    }
+    40% {
+      width: 100px; /* Fully visible */
+    }
+    50% {
+      width: 0px; /* Start with no width (invisible) */
+    }
+    60% {
+      width: 100px; /* Fully visible */
+    }
+    70% {
+      width: 0px; /* Start with no width (invisible) */
+    }
+    // 100% {
+    //   width: 100%; /* Fully visible */
+    // }
+  }
+  @keyframes Bb{
+
+    0% {
+    //   width: 0;
+    width: 10px;
+    // border-left:40px dotted black ;
+    /* Start with no width (invisible) */
+}
+100% {
+        width: 2px;
+    //   width: 0;
+    // border-left:80px dotted rgb(194, 175, 175) ;
+    /* Start with no width (invisible) */
+}
+  }
+  
+  /* Animation trigger */
+  .swipe-right-effect.swipe-right {
+    animation: swipeRight 0.5s ease-in-out; /* Adjust the duration as needed */
+  }
+  
