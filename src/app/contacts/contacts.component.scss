@@ -1,0 +1,124 @@
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply different animation classes to each container */
+  .icon-email-container:nth-child(1) {
+    animation-name: slideInFromLeft;
+  }
+  
+  .icon-email-container:nth-child(2) {
+      animation-name: slideInFromTop;
+}
+
+.icon-email-container:nth-child(3) {
+      animation-name: slideInFromRight;
+  }
+  
+  .icon-email-container:nth-child(4) {
+    animation-name: slideInFromBottom;
+  }
+  
+  .social-media-container {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  
+    .icon-email-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+      margin-right: 1rem;
+    //   opacity: 0;
+      animation-duration: 5s;
+      animation-fill-mode: forwards;
+      transition: 1s;
+    }
+    img{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        filter: drop-shadow(10px);
+        box-shadow: 2px 2px 10px wheat;
+    }
+  
+    .icon {
+      font-size: 2rem;
+      animation: slideFromRight 10s ease ;
+    }
+  
+    .email {
+      font-size: 1.3rem;
+      animation: slideFromLeft 10s ease ;
+    }
+  }
+  
+  .icon-email-container :hover{
+    transform: scale(1.2);
+  }
+
+
+.spin{
+width: 100px;
+height: 500px;
+margin: auto;
+color: black;
+background-color:aliceblue;
+animation: a 5s;
+perspective: 1000px;
+}
+
+@keyframes a{
+    0%{
+        transform: rotateY(0);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}

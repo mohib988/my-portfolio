@@ -9,6 +9,7 @@ import { BoxexComponent } from './boxex/boxex.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeadingComponent } from './heading/heading.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ProfileComponent } from './profile/profile.component';
     BoxexComponent,
     HeadingComponent,
     ProfileComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
