@@ -27,10 +27,51 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ],
 })
 export class ProfileComponent implements OnInit {
-  content: { image: string; text: string }[] = [
-    { image: './assets/images/m.jpg', text: 'Profile' },
-    { image: './assets/images/1.jpg', text: 'Hobbies' },
+  content: { image: string; text: string; description: string }[] = [
+    { 
+      image: './assets/images/m.jpg', 
+      text: 'Profile',
+      description: `Passionate software engineer eager to learn and take on responsibilities.
+                    Seeking a position to enhance web skills and gain industry experience.
+                    Proficient in app development using Flutter and web technologies including React, Node.js, MongoDB, Django, and NestJS.
+                    Experienced in programming with OOP, C++, and Python, as well as containerization technologies like Docker and Kubernetes.
+                    Interested in Machine Learning and skilled in communication.
+                    Ready to contribute as a valuable asset to the organization.`
+    },
+    { 
+      image: './assets/images/1.jpg', 
+      text: 'Education',
+      description: `Pre-Engineering:ADAMJEE GOVT COLLEGE:   (2018 - 2020)
+                     Bachelor of Software Engineering :NED UNIVERSITY (2020 - 2024)
+                    GPA: 3.5 / 4.0`
+    },
+    { 
+      image: './assets/images/image2.png', 
+      text: 'Skills',
+      description: `Flutter
+                    Python / TensorFlow
+                    Node / Express
+                    React / React Native
+                    Nest
+                    Git, Docker & Kubernetes
+                    Power BI`
+    },
+
+    { 
+      image: './assets/images/image3.png', 
+      text: 'Projects',
+      description: `POS Anomaly Detection: ML project utilizing Random Forest, Isolation Forest, and HDBSCAN with Python and Django.
+                    Cross Platform Flutter Application: Flutter and Django app for Android and iOS with map, QR scan, and Google login.
+                    WC2023 Analysis Using Power BI and Python: Analyzed World Cup 2023 player statistics using Power BI, Selenium, and Bright Data, processed data with Jupyter Notebook.`
+    },
+    { 
+      image: './assets/images/1.jpg', 
+      text: 'Hobbies',
+      description: `Cricket
+                    Travelling`
+    },
   ];
+  
 
   currentIndex: number = 0;
   swipeDirection: 'right' | 'left' = 'right';

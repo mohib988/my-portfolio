@@ -14,7 +14,7 @@ export class BoxexComponent {
    
       const interval = setInterval(() => {
         this.shuffleBoxes();
-      }, 2000);
+      }, 6000000);
     }
   
     shuffleBoxes() {

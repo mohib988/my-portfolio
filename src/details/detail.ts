@@ -2,39 +2,46 @@ export const project:any = [
 {
     heading:"Flutter Mobile App",
     description:"An Android and  mobile app with maps, google authentication,qr ,email ,forget password ,automatic location identifier and much more with redux and excellent folder structure.",
-    url:"https://user-images.githubusercontent.com/80708898/243273120-749c4191-2f33-4d5b-8c3e-fbc06b44ae18.png"
+    url:"https://user-images.githubusercontent.com/80708898/243273120-749c4191-2f33-4d5b-8c3e-fbc06b44ae18.png",
+    projectUrl:"https://github.com/EC-Paid-Project/Flutter-App"
 
 },
 {
     heading:"Charty App",
     description:"App that connect donors with the needy people and help them to donate money and other things to the needy people.",
-    url:"https://user-images.githubusercontent.com/80708898/243273120-749c4191-2f33-4d5b-8c3e-fbc06b44ae18.png"
-
-},
-{
-    heading:"internship Website",
+    url:"https://user-images.githubusercontent.com/80708898/243273120-749c4191-2f33-4d5b-8c3e-fbc06b44ae18.png",
+    projectUrl:"https://github.com/mohib988/Charity-App"
+    
+    
+  },
+  {
+    heading:"Internship Website",
     description:"Web app that help students to find internships and help companies to find interns.",
-    url:"https://user-images.githubusercontent.com/80708898/218475000-f2e6783f-5de6-4afa-8e1b-273589c3799f.png"
+    url:"https://user-images.githubusercontent.com/80708898/218475000-f2e6783f-5de6-4afa-8e1b-273589c3799f.png",
 
-},
-{
+    projectUrl:"https://intern-website-5see-bph6179qd-mohib988.vercel.app/"
+  },
+  {
     heading:"Smart Gas Website",
     description:"Website with map, payment and responsive for both phone and mobile.",
-    url:"https://user-images.githubusercontent.com/80708898/266821361-563670f7-d00f-4cec-9c93-352441c4b980.png"
-
-},
+    url:"https://user-images.githubusercontent.com/80708898/266821361-563670f7-d00f-4cec-9c93-352441c4b980.png",
+    projectUrl:"https://smartgas.netlify.app/"
+    
+  },
 {
     heading:"Rent Website",
     description:"website the make you take the rent of your stuff and pay the rent of the house  any other stuff .",
-    url:"https://user-images.githubusercontent.com/80708898/217801810-91aab5b8-6032-4ce2-9e04-1b0e4cff34e8.png"
-
-},
-{
+    url:"https://user-images.githubusercontent.com/80708898/217801810-91aab5b8-6032-4ce2-9e04-1b0e4cff34e8.png",
+    projectUrl:"https://github.com/mohib988/rent-app"
+    
+  },
+  {
     heading:"Unity Game",
     description:"Platformer Game with enemies stages and coins ,animations and sounds effects.",
-    url:"https://user-images.githubusercontent.com/80708898/210834542-d1828ca7-4774-4672-842d-c4d34b0248c9.png"
+    url:"https://user-images.githubusercontent.com/80708898/210834542-d1828ca7-4774-4672-842d-c4d34b0248c9.png",
+    projectUrl:"https://github.com/mohib988/rent-app"
 
-},
+  },
 
 
 ]

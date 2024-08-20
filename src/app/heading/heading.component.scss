@@ -1,4 +1,4 @@
-$text-color:snow;
+$text-color:rgba(255, 250, 250, 0.897);
 .hypnotize-container {
     width: 100%;
     height: 100%;
@@ -6,14 +6,16 @@ $text-color:snow;
     justify-content: center;
     align-items: center;
     // padding-top: 10px;
+    margin: 20px 0;
     perspective: 1000px;
-}
+  }
   
   .hypnotize-element {
     width: 150px;
     height: 100px;
+    margin: 10px 0;
     background-color:$text-color;
-    animation: hypnotize 10s linear infinite;
+    animation: hypnotize 20s linear infinite;
     color: black;
     font-size: 2rem;
     transform-style: preserve-3d;

@@ -61,7 +61,7 @@
   }
   
   .social-media-container {
-    width: 60vw;
+    width:90vw;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -74,15 +74,15 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 2rem;
-      margin-right: 1rem;
+      margin-right: 0.1rem;
     //   opacity: 0;
-      animation-duration: 5s;
+      animation-duration: 10s;
       animation-fill-mode: forwards;
       transition: 1s;
     }
     img{
-        width: 10vw;
-        height: 10vw;
+        width: 5vw;
+        height: 5vw;
         border-radius: 50%;
         filter: drop-shadow(10px);
         box-shadow: 2px 2px 10px wheat;
@@ -109,8 +109,8 @@ width: 100px;
 height: 500px;
 margin: auto;
 color: black;
-background-color:aliceblue;
-animation: a 5s;
+background-color:rgba(240, 248, 255, 0.87);
+animation: a 10s;
 perspective: 1000px;
 }
 

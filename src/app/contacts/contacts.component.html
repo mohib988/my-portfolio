@@ -1,8 +1,11 @@
 <div class="social-media-container">
     <div *ngFor="let detail of details" class="icon-email-container">
       <div class="icon">
-        <img class="fab {{ detail.logo }}" src={{detail.logo}} >
-    <!-- </img> -->
+        
+        <a href={{detail.email}} >
+          <img class="fab {{ detail.logo }}" src={{detail.logo}} >
+        <!-- </img> -->
+      </a>
       </div>
       <div class="email">
         {{ detail.email }}
@@ -11,5 +14,5 @@
   </div>
 
 
-
-  <div class="spin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere unde saepe aliquid culpa temporibus illo error doloremque. Harum incidunt exercitationem nihil suscipit tempore accusamus excepturi, vero dolore modi officia.</div>
+<!-- 
+  <div class="spin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facere unde saepe aliquid culpa temporibus illo error doloremque. Harum incidunt exercitationem nihil suscipit tempore accusamus excepturi, vero dolore modi officia.</div> -->

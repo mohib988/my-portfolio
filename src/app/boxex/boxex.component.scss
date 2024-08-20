@@ -20,9 +20,9 @@
     
     justify-content: center;
     align-items: center;
-    background-color: #fcf9f9e9;
+    background-color: #faf8f8d8;
     color: #000000;
-    font-size: 24px;
+    font-size: 1.2em;
     // width: 100px;
     // height: 100px;
     cursor: pointer;
@@ -38,10 +38,13 @@
   .box-container1 {
     display: flex;
     width: 30vw;
-    margin: 20px;
-    padding: 10px;
+    flex:1;
+    margin: 1rem;
+    padding: 0.5rem;
+    height: fit-content;
     justify-content: start;
     border-radius: 5px;
+    overflow: hidden;
   }
 
   /* Image styles */
@@ -71,16 +74,16 @@
   /* Heading styles */
   .box-heading1 {
     color: #000000;
-    font-size: 18px;
+    font-size: 1.4em;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
     margin-left: 30%;
   }
 
   /* Description styles */
   .box-description1 {
     color: #000000;
-    font-size: 1rem;
-    flex-grow: 1; /* Allow description to grow and fill remaining space */
-    text-align: left;
+    font-size: 1.3em;
+ /* Allow description to grow and fill remaining space */
+    text-align: center;
   }

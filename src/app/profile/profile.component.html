@@ -1,14 +1,16 @@
 <div class="profile-container">
-    <div class="left">
-      <img [@imageState]="getCurrentContent().text" [src]="getCurrentContent().image" alt="Profile Picture" />
-    </div>
-    <div class="right">
-      <h2 [@textState]="getCurrentContent().text">{{ getCurrentContent().text }}</h2>
-      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, itaque incidunt dolores, beatae voluptas aut ullam, laboriosam dolorem quaerat iusto deserunt eum repellendus autem quod eius in ratione dolor vitae.</div>
-    </div>
-    <!-- Swipe-right effect element -->
-    <div class="swipe-right-effect" [@swipeEffect]="swipeDirection">
-        <div class="extra"></div>
+  <div class="left">
+    <div class="profileImageDiv">
+      <img class="profileImage" [@imageState]="getCurrentContent().text" [src]="getCurrentContent().image" alt="Profile Picture" />
     </div>
   </div>
-  
+  <div class="right">
+    <h2 [@textState]="getCurrentContent().text">{{ getCurrentContent().text }}</h2>
+    <ul class="listU" [@textState]="getCurrentContent().description">
+      <li  class="list" *ngFor="let point of getCurrentContent().description.split('\n')">{{ point.trim() }}</li>
+    </ul>
+  </div>
+  <div class="swipe-right-effect" [@swipeEffect]="swipeDirection">
+    <div class="extra"></div>
+  </div>
+</div>
