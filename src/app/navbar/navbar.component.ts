@@ -15,7 +15,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   ],
 })
 export class NavbarComponent {
-  links: string[] = ['Home', 'About', 'Projects', 'Contact'];
+  links: string[] = ['Home', 'Projects','About', 'Contact'];
   showLinks = 'hide';
 
   ngOnInit() {
