@@ -60,19 +60,19 @@ export const  tools= [
       url: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
     },
   {
-    heading: "Solidity Smart Contracts",
-    description: "Developed and deployed Ethereum smart contracts using Solidity for blockchain-based applications.",
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQocRf9e2sJpoWFnqezeQcbZhCmVYLsgGK5BQ"
-  },
-  {
     heading: "Docker & Kubernetes",
     description: "Orchestrated Docker containers using Kubernetes for efficient deployment and scaling of microservices.",
     url: "https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg"
   },
   {
-    heading: "Nest.js",
+    heading: "Flutter",
+    description: "Created  plenty of reponsive cross platfrom applications with Flutter.",
+    url: "https://storage.googleapis.com/cms-storage-bucket/847ae81f5430402216fd.svg"
+  },
+  {
+    heading: "MERN Stack",
     description: "Created RESTful APIs and server-side applications with Nest.js, Express.js, and MongoDB.",
-    url: "https://docs.nestjs.com/assets/logo-small.svg"
+    url: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*kxPYwfJmkXZ3iCWy.png"
   },
     {
       heading: "Angular",

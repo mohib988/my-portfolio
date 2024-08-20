@@ -4,7 +4,7 @@
     <ul class="nav-links">
       <li *ngFor="let link of links" class="nav-item" [@linkAnimation]="showLinks">
         <div class="neon-container">
-             <a href="#" class="neon-text">{{ link }}</a>
+             <a [href]="'#' + link" class="neon-text">{{ link }}</a>
            
         </div>
         <div class="dust"></div>

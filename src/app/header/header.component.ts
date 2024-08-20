@@ -22,7 +22,7 @@ import { Subscription, interval } from 'rxjs';
 
 })
 export class HeaderComponent implements OnInit {
-  words: string[] = ['Welcome', 'to', 'my', 'home'];
+  words: string[] = ['Oh!', 'you', 'come', 'nice',"to","see","you😉"];
   currentWordIndex = 0;
 
   ngOnInit(): void {
@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
       } else {
         this.currentWordIndex = 0;
       }
-    }, 3000); // Change words every 2 seconds (adjust as needed)
+    }, 6000); // Change words every 2 seconds (adjust as needed)
   }
   @Input() a: string = '';
 

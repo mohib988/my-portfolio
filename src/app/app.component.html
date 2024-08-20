@@ -1,13 +1,24 @@
-<app-header [a]="title" (childE)="receiveData($event)"></app-header>
-<app-heading [title]="sectionName"></app-heading>
 
-<app-boxex [project]="project"></app-boxex>
+<div id="Home">
+
+    <app-header [a]="title" (childE)="receiveData($event)"></app-header>
+    <app-heading [title]="sectionName"></app-heading>
+</div>
+
+<div id="Projects">
+
+    <app-boxex [project]="project"></app-boxex>
+</div>
 <app-heading [title]="sectionName2"></app-heading>
 
 <app-boxex [project]="tools"></app-boxex>
-
-<app-profile></app-profile>
-<app-contacts></app-contacts>
+<div id="About">
+    
+    <app-profile></app-profile>
+</div>
+<div id="Contact">
+    <app-contacts></app-contacts>
+</div>
 <!-- <app-heading [title]="sectionName"></app-heading>
 <app-boxex></app-boxex> -->
 

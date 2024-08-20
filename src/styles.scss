@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:ital,wght@1,200&display=swap');
 $text-color: snow;
+html {
+    scroll-behavior: smooth;
+  }
 body{
     margin: 0%;
     padding: 0%;
     background-color: rgba(0, 0, 0, 0.795);
     color: $text-color;
+    scroll-behavior: smooth;
+
+
 }
 *{
     color: $text-color;
