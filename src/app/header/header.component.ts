@@ -22,7 +22,7 @@ import { Subscription, interval } from 'rxjs';
 
 })
 export class HeaderComponent implements OnInit {
-  words: string[] = ['Oh!', 'you', 'come', 'nice',"to","see","you😉"];
+  words: string[] = [ "I'm","glad",'you', 'come!', 'Nice',"to","see","you😉"];
   currentWordIndex = 0;
 
   ngOnInit(): void {

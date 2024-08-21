@@ -4,9 +4,10 @@
     display: flex;
     // align-items: center;
     justify-content: center;
-    height: 50vh;
+    max-height: 50vh;
     width: 80vw;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     margin: auto;
   }
   
@@ -16,13 +17,15 @@
   }
   
   .profileImageDiv{
+    margin: auto;
     aspect-ratio: 1.5/2;
-    height: 50vh;
+    max-height: 50vh;
     
   }
   img {
     aspect-ratio: 1.5/2;
-    height: 50vh;
+    max-height: 50vh;
+    margin: auto;
     // max-width: 100%;
 object-fit: contain;
     border-radius: 5px;
@@ -62,7 +65,7 @@ object-fit: contain;
     position: absolute-relative;
     top: 0%;
     left: 0%;
-    height: 100%;
+    max-height: 100%;
     width: 2px;
     background-color: rgba(246, 250, 39, 0.755);
     box-shadow: 0px 0px 20px rgb(255, 255, 3);
@@ -126,3 +129,41 @@ object-fit: contain;
     margin: 4px;
     // list-style: none;
   }
+  @media (max-width: 768px) {
+
+
+    .profileImageDiv, img {
+        max-height: 30vh; /* Adjust max-height for smaller screens */
+    }
+    .profileImageDiv {
+        max-height: 30vh; /* Adjust max-height for smaller screens */
+      }
+      .profile-container{
+      max-height: 30vh; /* Adjust max-height for smaller screens */
+
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    .list {
+        font-size: 0.9em; /* Smaller font size */
+    }
+}
+
+// @media (max-width: 480px) {
+    
+
+//     .profileImageDiv, img {
+//         max-height: 20vh; /* Further adjustment for very small screens */
+//     }
+
+//     h2 {
+//         font-size: 1rem; /* Further reduce font size */
+//     }
+
+//     .list {
+//         font-size: 0.5em; /* Further reduce font size */
+//     }
+// }

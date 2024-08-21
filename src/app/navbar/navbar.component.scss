@@ -58,12 +58,13 @@ $text-color: snow;
 }
 
 .navbar {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 3.75rem; /* 60px */
     position: fixed;
+
     top: 0;
     left: 0;
     right: 0;

@@ -1,90 +1,136 @@
-// box-layout.component.scss
-
 .box-container {
-    display: grid;
-    width: 90vw;
-    margin: auto;
-    grid-template-columns: repeat(3, 30vw);
-    grid-template-rows: repeat(2, 20vh);
-    gap: 10px;
-    justify-content: center;
-    // align-content: center;
-    width: 340px; /* Adjust the container width as needed */
-    margin: 0 auto;
-    margin-top: 20px;
+  display: grid;
+  width: 90vw;
+  margin: auto;
+  grid-template-columns: repeat(3, 30vw);
+  grid-template-rows: repeat(2, 20vh);
+  gap: 10px;
+  justify-content: center;
+  width: 340px; /* Default container width */
+  margin-top: 20px;
+}
+
+.box {
+  display: flex;
+  border-radius: 5px;
+  padding: 5px 0;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #faf8f8d8;
+  color: #000000;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+      border: whitesmoke 2px;
+      box-shadow: rgba(245, 245, 245, 0.897) 2px 2px 5px;
   }
-  
+}
+
+.box-container1 {
+  display: flex;
+  width: 30vw;
+  // flex: 1;
+  max-height:20vh ;
+  align-items: flex-start;
+
+  overflow-y: hidden;
+  height: fit-content;
+  justify-content: start;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.box-image1 {
+  margin-right: 10px;
+  margin: 3px 0;
+  border-radius: 5px;
+  width: 8vw;
+  height: 18vh;
+}
+
+.box-content1 {
+  flex: 1;
+  width: 23vw;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+
+.box-heading1 {
+  color: #000000;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 30%;
+}
+
+.box-description1 {
+  color: #000000;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .box-container {
+      grid-template-columns: repeat(2, 45vw);
+      grid-template-rows: auto;
+      gap: 8px;
+      width: 90vw; /* Adjusted width */
+  }
+
   .box {
-    display: flex;
-    border-radius: 5px;
-    
-    justify-content: center;
-    align-items: center;
-    background-color: #faf8f8d8;
-    color: #000000;
-    font-size: 1.2em;
-    // width: 100px;
-    // height: 100px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-  
-    &:hover {
-      border: whitesmoke 2px ;
-      box-shadow: whitesmoke 2px 2px;
-    }
-  }
-  
-
-  
-  .box-container1 {
-    display: flex;
-    width: 30vw;
-    flex:1;
-    margin: 1rem;
-    padding: 0.5rem;
-    height: fit-content;
-    justify-content: start;
-    border-radius: 5px;
-    overflow: hidden;
+      font-size: 1em; /* Adjusted font size */
   }
 
-  /* Image styles */
   .box-image1 {
-    // flex: 0 0 100px; /* Fixed width for the image */
-    margin-right: 10px;
-    border-radius: 5px;
-    width: 7vw;
-    height: 20vh;
-    
-    // img{
-    // width: 10vw;
-    // height: 20vh;
-    // }
+      width: 15vw; /* Adjusted width */
+      height: 15vh; /* Adjusted height */
   }
 
-  /* Content container (heading and description) */
   .box-content1 {
-    flex: 1; /* Allow content to take remaining space */
-    width: 23vw;
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    flex-direction: column;
+      width: 75vw; /* Adjusted content width */
   }
 
-  /* Heading styles */
   .box-heading1 {
-    color: #000000;
-    font-size: 1.4em;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 30%;
+      font-size: 1.2em; /* Adjusted font size */
+      margin-left: 20%; /* Adjusted alignment */
   }
 
-  /* Description styles */
   .box-description1 {
-    color: #000000;
-    font-size: 1.3em;
- /* Allow description to grow and fill remaining space */
-    text-align: center;
+      font-size: 1.1em; /* Adjusted font size */
   }
+}
+
+@media (max-width: 480px) {
+  .box-container {
+      grid-template-columns: repeat(1, 80vw);
+      grid-template-rows: auto;
+      width: 100vw; /* Full width on very small screens */
+  }
+
+  .box {
+      font-size: 0.9em; /* Smaller font size */
+  }
+
+  .box-image1 { /* Larger image relative to screen size */
+      height: 10vh; /* Adjusted height */
+  }
+
+  .box-content1 {
+      width: 80vw; /* Full width for content */
+  }
+
+  .box-heading1 {
+      font-size: 1em; /* Smaller font size */
+      margin-left: 0; /* Centered alignment */
+  }
+
+  .box-description1 {
+      font-size: 0.9em; /* Smaller font size */
+  }
+}

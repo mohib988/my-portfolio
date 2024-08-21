@@ -1,7 +1,7 @@
 export const project:any = [
 {
     heading:"Flutter Mobile App",
-    description:"An Android and  mobile app with maps, google authentication,qr ,email ,forget password ,automatic location identifier and much more with redux and excellent folder structure.",
+    description:"An Android and  mobile app with maps, google authentication,qr ,email ,forget password ,automatic location identifier and much more with redux",
     url:"https://user-images.githubusercontent.com/80708898/243273120-749c4191-2f33-4d5b-8c3e-fbc06b44ae18.png",
     projectUrl:"https://github.com/EC-Paid-Project/Flutter-App"
 

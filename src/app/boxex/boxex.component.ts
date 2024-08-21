@@ -21,6 +21,11 @@ export class BoxexComponent {
       // Shuffle the positions of the project
       this.project = this.shuffleArray(this.project);
     }
+    
+    navigateToUrl(url: string) {
+      console.log(url)
+      window.location.href = url;  // Navigate to the URL
+    }
   
     // Function to shuffle an array randomly
     private shuffleArray(array: any[]): any[] {
