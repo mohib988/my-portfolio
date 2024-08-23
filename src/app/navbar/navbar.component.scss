@@ -125,10 +125,10 @@ $text-color: snow;
 @media (max-width: 768px) {
     .nav-links  a{
         margin-left: 0.5rem; /* 10px */
-        font-size: 0.8rem !important;}
+        font-size: 1.3rem !important;}
     }
     @media (max-width: 468px) {
         .nav-links a {
         margin-left: 0.3rem; /* 10px */
-        font-size: 0.6rem;}
+        font-size: 0.8rem !important;}
     }
