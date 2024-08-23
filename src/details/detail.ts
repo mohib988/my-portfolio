@@ -42,6 +42,20 @@ export const project:any = [
     projectUrl:"https://github.com/mohib988/rent-app"
 
   },
+  {
+    heading:"World Cup Analytics",
+    description:"Utilizing Selenium, Bright Data, and Python to scrape and process data Visualizing insights in Power BI",
+    url:"./assets/images/analysis.png",
+    projectUrl:"https://github.com/mohib988/worldcup2023Analytics"
+
+  },
+  {
+    heading:"Stock Analysis using Monte Carlo",
+    description:"React Project the use real world stock data and perform montecarlo stock analysis",
+    url:"./assets/images/stock.png",
+    projectUrl:"https://github.com/mohib988/stock-assessment"
+
+  },
 
 
 ]

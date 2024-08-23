@@ -1,8 +1,8 @@
 .box-container {
   display: grid;
-  width: 90vw;
+  width: 98vw;
   margin: auto;
-  grid-template-columns: repeat(3, 30vw);
+  grid-template-columns: repeat(3, 31vw);
   grid-template-rows: repeat(2, 20vh);
   gap: 10px;
   justify-content: center;
@@ -126,11 +126,12 @@
   }
 
   .box-heading1 {
-      font-size: 1em; /* Smaller font size */
+      font-size: 1.3em; /* Smaller font size */
       margin-left: 0; /* Centered alignment */
   }
 
   .box-description1 {
-      font-size: 0.9em; /* Smaller font size */
+    padding: 0px 2px;
+      font-size: 1em; /* Smaller font size */
   }
 }

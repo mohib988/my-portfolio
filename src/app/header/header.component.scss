@@ -203,6 +203,20 @@ font-size: 7rem;  }
 font-size: 1rem;  }
 
 }
+@media (max-width: 768px) {
+  .background{
+    height: 30vh;
+
+  }
+  .yoyo-container {
+    height: 15vh;
+  }
+  .inner {
+font-size: 5rem;  }
+  .text  {
+font-size: 1rem !important;  }
+
+}
 
 // navbar.component.scss
 

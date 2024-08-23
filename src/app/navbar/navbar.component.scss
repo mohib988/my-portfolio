@@ -114,10 +114,21 @@ $text-color: snow;
     a:hover{
         font-size:1.7rem !important ;
         transition: 2s;
-    cursor: pointer;
+        cursor: pointer;
 
-}
+    }
 }
 @keyframes sparkle {
     /* Add your sparkle animation here */
 }
+
+@media (max-width: 768px) {
+    .nav-links  a{
+        margin-left: 0.5rem; /* 10px */
+        font-size: 0.8rem !important;}
+    }
+    @media (max-width: 468px) {
+        .nav-links a {
+        margin-left: 0.3rem; /* 10px */
+        font-size: 0.6rem;}
+    }

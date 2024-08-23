@@ -5,7 +5,7 @@
     // align-items: center;
     justify-content: center;
     max-height: 50vh;
-    width: 80vw;
+    width: 98vw;
     overflow-y: auto;
     overflow-x: hidden;
     margin: auto;
@@ -20,12 +20,14 @@
     margin: auto;
     aspect-ratio: 1.5/2;
     max-height: 50vh;
+    min-height: 500px;
     
   }
   img {
     aspect-ratio: 1.5/2;
     max-height: 50vh;
     margin: auto;
+  min-height: 500px;
     // max-width: 100%;
 object-fit: contain;
     border-radius: 5px;
@@ -54,9 +56,11 @@ object-fit: contain;
     top: 0;
     right: 0;
     bottom: 0;
+    border-left: 5px solid  rgba(246, 250, 39, 0.755);
     width: 0; /* Initially invisible */
+    box-shadow: 0px 0px 20px rgb(255, 255, 3);
     // background-color: #c0c0c036; /* Silver background color */
-    background-color: rgba(30, 30, 30, 0.728);
+    background-color: rgba(30, 30, 30, 0.897);
     border-left:2px ;
     z-index: 1; /* Place above the image */
 }
@@ -69,6 +73,7 @@ object-fit: contain;
     width: 2px;
     background-color: rgba(246, 250, 39, 0.755);
     box-shadow: 0px 0px 20px rgb(255, 255, 3);
+
     animation: Bb  100ms  100ms ease-in-out !important;
   }
   @keyframes swipeRight{
@@ -131,15 +136,16 @@ object-fit: contain;
   }
   @media (max-width: 768px) {
 
-
+    
     .profileImageDiv, img {
         max-height: 30vh; /* Adjust max-height for smaller screens */
-    }
-    .profileImageDiv {
+        min-height: 30vh; /* Adjust max-height for smaller screens */
+      }
+      .profileImageDiv {
         max-height: 30vh; /* Adjust max-height for smaller screens */
       }
       .profile-container{
-      max-height: 30vh; /* Adjust max-height for smaller screens */
+        max-height: 30vh; /* Adjust max-height for smaller screens */
 
     }
 
@@ -148,10 +154,36 @@ object-fit: contain;
     }
 
     .list {
-        font-size: 0.9em; /* Smaller font size */
+      margin: 2px;
+      font-size: 0.9em; /* Smaller font size */
+    }
+  }
+  
+  @media (max-width: 368px) {
+    
+    .profileImageDiv, img {
+      min-height: 10vh; /* Adjust max-height for smaller screens */
+        max-height: 20vh; /* Adjust max-height for smaller screens */
+    }
+    .profileImageDiv {
+      max-height: 20vh; /* Adjust max-height for smaller screens */
+      }
+      .profile-container{
+      max-height: 20vh; /* Adjust max-height for smaller screens */
+  
+    }
+    
+    
+    h2 {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+  
+    .list {
+        font-size: 0.6em; /* Smaller font size */
+    margin: 0px;
     }
 }
-
+//     h2 {
 // @media (max-width: 480px) {
     
 
@@ -159,7 +191,6 @@ object-fit: contain;
 //         max-height: 20vh; /* Further adjustment for very small screens */
 //     }
 
-//     h2 {
 //         font-size: 1rem; /* Further reduce font size */
 //     }
 

@@ -81,8 +81,8 @@
       transition: 1s;
     }
     img{
-        width: 5vw;
-        height: 5vw;
+        width: 10vw;
+        height: 10vw;
         border-radius: 50%;
         filter: drop-shadow(10px);
         box-shadow: 2px 2px 10px wheat;
@@ -120,5 +120,13 @@ perspective: 1000px;
     }
     100%{
         transform: rotateY(360deg);
+    }
+}
+  @media (max-width: 468px) {
+    .icon {
+      font-size: 1.5em;
+    }
+    .email {
+      font-size: 1em;
     }
 }
