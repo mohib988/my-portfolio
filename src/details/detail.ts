@@ -7,10 +7,10 @@ export const project:any = [
 
 },
 {
-    heading:"Charty App",
-    description:"App that connect donors with the needy people and help them to donate money and other things to the needy people.",
-    url:"https://user-images.githubusercontent.com/80708898/243273120-749c4191-2f33-4d5b-8c3e-fbc06b44ae18.png",
-    projectUrl:"https://github.com/mohib988/Charity-App"
+    heading:"Auto Scaling Kubernetes",
+    description:"Implemented Kubernetes load balancing and autoscaling, optimizing resource use and performance via Ingress controllers, HPA, and automated scaling based on metrics.",
+    url:"https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg",
+    projectUrl:"https://github.com/mohib988/Hpa-and-loadBalancing-with-Kubernetes",
     
     
   },
