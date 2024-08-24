@@ -8,7 +8,7 @@ export const project:any = [
 },
 {
     heading:"Auto Scaling Kubernetes",
-    description:"Implemented Kubernetes load balancing and autoscaling, optimizing resource use and performance via Ingress controllers, HPA, and automated scaling based on metrics.",
+    description:"Implemented load balancing and autoscaling, optimizing resource use via Ingress controllers, HPA, and automated scaling based on metrics.",
     url:"https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg",
     projectUrl:"https://github.com/mohib988/Hpa-and-loadBalancing-with-Kubernetes",
     

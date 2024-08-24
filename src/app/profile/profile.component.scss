@@ -4,6 +4,7 @@
     display: flex;
     // align-items: center;
     justify-content: center;
+    min-height: 40vh;
     max-height: 50vh;
     width: 98vw;
     overflow-y: auto;
@@ -26,7 +27,6 @@
   img {
     aspect-ratio: 1.5/2;
     max-height: 50vh;
-    margin: auto;
   // min-height: 500px;
     // max-width: 100%;
 object-fit: contain;
@@ -131,7 +131,6 @@ object-fit: contain;
     text-align: left;
     font-size: 1.6em;
     text-decoration: none;
-    margin: 4px;
     // list-style: none;
   }
   @media (max-width: 768px) {
@@ -154,13 +153,14 @@ object-fit: contain;
     }
 
     .list {
-      margin: 2px;
+    
       font-size: 0.9em; /* Smaller font size */
     }
   }
   
   @media (max-width: 368px) {
-    
+    .profile-container {
+    min-height: 200px;}
     .profileImageDiv, img {
       min-height: 10vh; /* Adjust max-height for smaller screens */
         max-height: 20vh; /* Adjust max-height for smaller screens */
