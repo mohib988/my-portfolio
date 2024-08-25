@@ -2,7 +2,7 @@
     position: relative; /* Ensure the effect stays within the container */
     padding: 10px 0px;
     display: flex;
-    // align-items: center;
+    align-items: center;
     justify-content: center;
     min-height: 40vh;
     max-height: 50vh;
@@ -40,7 +40,7 @@ object-fit: contain;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    // justify-content: center;
+    justify-content: center;
     // justify-content: space-around;
 
   }
@@ -160,9 +160,10 @@ object-fit: contain;
   
   @media (max-width: 368px) {
     .profile-container {
-    min-height: 200px;}
+      // min-height: 5vh; /* Adjust max-height for smaller screens */
+    min-height: 100px;}
     .profileImageDiv, img {
-      min-height: 10vh; /* Adjust max-height for smaller screens */
+      min-height: 5vh; /* Adjust max-height for smaller screens */
         max-height: 20vh; /* Adjust max-height for smaller screens */
     }
     .profileImageDiv {
