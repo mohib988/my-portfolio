@@ -15,7 +15,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   ],
 })
 export class NavbarComponent {
-  links: string[] = ['Home', 'Projects','About', 'Contact'];
+  links: string[] = ['Home', 'Projects','About', "Experties",'Contact'];
   showLinks = 'hide';
   ngOnInit() {
     setTimeout(() => {

@@ -51,7 +51,7 @@ $text-color: snow;
     -webkit-background-clip: text;
     color: transparent;
     animation: neon-glow 8s linear infinite;
-    transition: 2s;
+    transition: 1s;
     transform: scale(6.25rem); /* 100px */
     cursor: pointer;
     
@@ -92,7 +92,7 @@ $text-color: snow;
             text-decoration: none;
             color: black;
             cursor: pointer;
-            transition: 2s;
+            transition: 1s;
         }
 
         .sparkle {
@@ -113,8 +113,9 @@ $text-color: snow;
 
     a:hover{
         font-size:1.7rem !important ;
-        transition: 2s;
+        transition: 1s;
         cursor: pointer;
+        color:white !important;
 
     }
 }
@@ -124,11 +125,26 @@ $text-color: snow;
 
 @media (max-width: 768px) {
     .nav-links  a{
-        margin-left: 0.5rem; /* 10px */
+        margin-left: 0.3rem !important; /* 10px */
         font-size: 1.3rem !important;}
+        .nav-item {
+            a:hover{
+                font-size:1.3rem !important ;
+                transition: 2s !important;
+                cursor: pointer !important;
+                
+            }
+        }
     }
-    @media (max-width: 468px) {
+    @media (max-width: 368px) {
         .nav-links a {
-        margin-left: 0.3rem; /* 10px */
-        font-size: 0.8rem !important;}
+            margin-left: 0.1rem !important; /* Adjusts the margin */
+            font-size: 0.8rem !important;    /* Adjusts the font size */
+        }
+    
+        .nav-links a:hover {
+            font-size: 0.99rem !important;    /* Ensures font size remains the same on hover */
+            transition: font-size 2s !important; /* Smooth transition of font size */
+            cursor: pointer !important;      /* Changes cursor to pointer on hover */
+        }
     }
