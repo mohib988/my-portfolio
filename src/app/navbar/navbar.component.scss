@@ -8,7 +8,7 @@ $text-color: snow;
     color: #fff;
     font-weight: bold;
     font-size: 1.5rem; /* 24px */
-    animation: neon-glow2 20s  ease-in-out infinite;
+    // animation: neon-glow2 20s  ease-in-out infinite;
     backface-visibility: hidden; /* Improves rendering */
     will-change: transform;
 }
@@ -112,7 +112,7 @@ $text-color: snow;
 .nav-item {
 
     a:hover{
-        font-size:1.7rem !important ;
+        font-size:1.5rem !important ;
         transition: 1s;
         cursor: pointer;
         color:white !important;
